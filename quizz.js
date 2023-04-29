@@ -136,7 +136,7 @@ form.addEventListener("submit", (e) => {
 
   userAnswers.forEach((answer, index) => {
     if (answer === corectAnswers[index]) {
-      score += 2.5;
+      score += 1;
     }
   });
 
