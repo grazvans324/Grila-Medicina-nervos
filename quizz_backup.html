@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="quizz.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Quizz</title>
+  </head>
+  <body>
+    <div class="intro py-3 bg-white text-center">
+      <div class="container">
+        <h2 class="text-primary display-3 my-4">Teo Quizz</h2>
+        <p class="timer"></p>
+        <p>At 3600 seconds (one hour) the test is over</p>
+      </div>
+    </div>
+    <!--Show Answer-->
+    <div class="result d-none py-4 bg-light text-center">
+      <div class="container lead">
+        <p>
+          Ai luat nota
+          <span class="text-primary display-4 p-3"> 0</span>
+        </p>
+        /60
+      </div>
+    </div>
+    <!--Show Answer-->
+
+    <!--quizz-->
+    <div class="quiz py-4 bg-primary">
+      <div class="container">
+        <h2 class="my-5 text-white">On With the questions</h2>
+        <form action="" class="quiz-form text-light">
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              1. Care dintre următoarele afirmaţii referitoare la nervii
+              cranieni nu este adevărată:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="A" checked />
+              <label class="form-check-label"
+                >A. Fibrele circulare ale m.ciliar sunt inervate de n.III prin
+                fibre parasimpatice</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="B" />
+              <label class="form-check-label"
+                >B. Nervii III şi IV au nucleii motori în mezencefal</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="C" />
+            <label class="form-check-label"
+              >C. Toţi nervii cranieni îşi au originea aparentă la nivelul
+              trunchiului cerebral</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="D" />
+            <label class="form-check-label"
+              >D. Nervul IX inervează glanda parotidă</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="E" />
+            <label class="form-check-label"
+              >E. Nervul care inervează muşchii masticatori este un nerv
+              mixt</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">2. Alegeţi ordinea corectă:</p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" value="A" checked />
+              <label class="form-check-label"
+                >A. Ganglion spinal – fascicule spinobulbare – nuclei gracil şi
+                cuneat – lemnisc medial – decusaţie senzitivă - talamus</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" value="B" />
+              <label class="form-check-label"
+                >B. Ganglion spinal – fascicule spinobulbare – nuclei gracil şi
+                cuneat – decusaţie motorie - lemnisc medial – talamus</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="C" checked />
+            <label class="form-check-label"
+              >C. Ganglion spinal – fascicule spinobulbare – nuclei gracil şi
+              cuneat – decusaţie senzitivă - lemnisc medial – talamus</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="D" checked />
+            <label class="form-check-label"
+              >D. Ganglion spinal – fascicule spinobulbare – decusaţie senzitivă
+              - nuclei gracil şi cuneat – lemnisc medial – talamus</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="E" checked />
+            <label class="form-check-label"
+              >E .Ganglion spinal – decusaţie senzitivă - fascicule spinobulbare
+              – nuclei gracil şi cuneat – lemnisc medial – talamus</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              3. În care regiune ramurile ventrale ale nervilor spinali nu
+              formează prin anastomozare plexuri:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" value="A" checked />
+              <label class="form-check-label">A. Cervicală</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" value="B" />
+              <label class="form-check-label">B. Toracală</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="C" checked />
+            <label class="form-check-label">C. Lombară</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="D" checked />
+            <label class="form-check-label">D. Sacrală</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="E" checked />
+            <label class="form-check-label"
+              >E. Formează plexuri în toate regiunile</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              4. Care dintre următoarele structuri se găsesc deasupra şi lateral
+              de talamus:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" value="A" checked />
+              <label class="form-check-label">A. Hipotalamus</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" value="B" />
+              <label class="form-check-label">B. Nuclei bazali</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="C" checked />
+            <label class="form-check-label">C. Epitalamus</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="D" checked />
+            <label class="form-check-label">D. Corp geniculat lateral</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="E" checked />
+            <label class="form-check-label">E. Corp geniculat medial</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              5. Corpusculii Nissl se găsesc:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" value="A" checked />
+              <label class="form-check-label"
+                >A. La nivelul butonilor terminali</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" value="B" />
+              <label class="form-check-label">B. În axoplasmă</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="C" />
+            <label class="form-check-label">C. În neuroplasmă</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="D" />
+            <label class="form-check-label">D. La vârful dendritelor</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="E" />
+            <label class="form-check-label"
+              >E. Toate răspunsurile sunt adevărate</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              6. Corpusculii neurotendinosi Golgi sunt receptori pentru
+              sensibilitatea:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" value="A" checked />
+              <label class="form-check-label">A. Tactilă protopatică</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" value="B" />
+              <label class="form-check-label"
+                >B. Proprioceptivă de control al mişcării</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="C" />
+            <label class="form-check-label">C. Tactilă fină</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="D" />
+            <label class="form-check-label">D. Kinestezică</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="E" />
+            <label class="form-check-label">E. Interoceptivă</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              7. Unul dintre următorii nervi cranieni are nuclei senzitivi atât
+              în bulb cât şi în punte:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" value="A" checked />
+              <label class="form-check-label">A. VI</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" value="B" />
+              <label class="form-check-label">B. IX</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="C" />
+            <label class="form-check-label">C. X</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="D" />
+            <label class="form-check-label">D. VII</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="E" />
+            <label class="form-check-label">E. VIII</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              8. Centrul reflexului de stimulare a secreţiei gastrice se găseşte
+              la nivelul:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" value="A" checked />
+              <label class="form-check-label">A. Măduvei toracale</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" value="B" />
+              <label class="form-check-label">B. Măduvei sacrale S2-S4</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="C" />
+            <label class="form-check-label"
+              >C. Ganglionilor juxtaviscerali</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="D" />
+            <label class="form-check-label"
+              >D. Nucleului dorsal al vagului</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="E" />
+            <label class="form-check-label">E. Nucleului ambiguu</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">9. Nervii pelvieni conţin:</p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" value="A" checked />
+              <label class="form-check-label"
+                >A. Fibre preganglionare simpatice</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" value="B" />
+              <label class="form-check-label">B. Fibre amielinice</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="C" />
+            <label class="form-check-label"
+              >C. Fibre preganglionare parasimpatice</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="D" />
+            <label class="form-check-label"
+              >D. Fibre postganglionare simpatice</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="E" />
+            <label class="form-check-label"
+              >E. Fibre postganglionare parasimpatice</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              10. Care dintre următorii nervi au originea reală şi aparentă la
+              nivelul bulbului:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" value="A" checked />
+              <label class="form-check-label">A. N.V</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" value="B" />
+              <label class="form-check-label">B. N. III</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="C" />
+            <label class="form-check-label">C. N. XII</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="D" />
+            <label class="form-check-label">D. N. IV</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="E" />
+            <label class="form-check-label">E. N.VII</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              11. Care dintre următoarele nu reprezintă un efect al stimulării
+              parasimpatice:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q11" value="A" checked />
+              <label class="form-check-label"
+                >A. Scade frecvenţa cardiacă</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q11" value="B" />
+              <label class="form-check-label"
+                >B. Creşte secreţia lacrimală</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q11" value="C" />
+            <label class="form-check-label"
+              >C. Scade forţa de contracţie a cordului</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q11" value="D" />
+            <label class="form-check-label"
+              >D. Stimulează motilitatea tractului gastrointestinal</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q11" value="E" />
+            <label class="form-check-label"
+              >E. Creşte secreţia exocrină a pancreasului</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              12. Neuronul inferior al căii sistemului piramidal nu poate fi
+              situat în:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q12" value="A" checked />
+              <label class="form-check-label"
+                >A. Cornul anterior al măduvei</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q12" value="B" />
+              <label class="form-check-label"
+                >B. Nucleul motor al nervului VI din bulb</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q12" value="C" />
+            <label class="form-check-label"
+              >C. Nucleul motor al nervului VII din punte</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q12" value="D" />
+            <label class="form-check-label"
+              >D. Nucleul motor al nervului III din mezencefal</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q12" value="E" />
+            <label class="form-check-label"
+              >E. Nucleul motor al nervului XII din bulb</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              13. Despre rădăcina anterioară a nervului spinal sunt adevărate
+              următoarele, cu excepţia:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q13" value="A" checked />
+              <label class="form-check-label">A. Este motorie</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q13" value="B" />
+              <label class="form-check-label"
+                >B. Conţine axonii neuroilor somatomotori din coarnele
+                anterioare ale măduvei</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q13" value="C" />
+            <label class="form-check-label"
+              >C. Conţine axonii neuronilor somatomotori simpatici din coarnele
+              laterale ale măduvei</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q13" value="D" />
+            <label class="form-check-label"
+              >D. Se găseşte în canalul vertebral</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q13" value="E" />
+            <label class="form-check-label"
+              >E. Conţine doar axoni ai neuronilor motori din măduvă</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              14. Nu sunt fascicule extrapiramidale cu origine în mezencefal:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q14" value="A" checked />
+              <label class="form-check-label"
+                >A. Fascicule reticulospinale</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q14" value="B" />
+              <label class="form-check-label">B. Fascicule rubrospinale</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q14" value="C" />
+            <label class="form-check-label">C. Fascicule strionigrice</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q14" value="D" />
+            <label class="form-check-label">D. Fascicule nigrospinale</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q14" value="E" />
+            <label class="form-check-label"
+              >E. Toate au originea în mezencefal</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              15. Câte şanţuri foarte adânci care îl împart în lobi se găsesc pe
+              suprafaţa cerebelului:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q15" value="A" checked />
+              <label class="form-check-label">A. 1</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q15" value="B" />
+              <label class="form-check-label">B. 2</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q15" value="C" />
+            <label class="form-check-label">C. 3</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q15" value="D" />
+            <label class="form-check-label">D. 4</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q15" value="E" />
+            <label class="form-check-label">E. 5</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              16. Care dintre următoarele structuri nu se găseşte în fosa
+              posterioară a craniului:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q16" value="A" checked />
+              <label class="form-check-label">A. Cerebelul</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q16" value="B" />
+              <label class="form-check-label">B. Bulbul rahidian</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q16" value="C" />
+            <label class="form-check-label">C. Puntea lui Varolio</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q16" value="D" />
+            <label class="form-check-label">D. Ventriculul III</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q16" value="E" />
+            <label class="form-check-label"
+              >E. Originea aparenta a nervului VI</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              17. Despre neuronii multipolari sunt adevărate următoarele, cu
+              excepţia:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q17" value="A" checked />
+              <label class="form-check-label">A. Pot avea formă stelată</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q17" value="B" />
+              <label class="form-check-label">B. Pot fi piriformi</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q17" value="C" />
+            <label class="form-check-label"
+              >C. Sunt localizaţi în scoarţa cerebrală</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q17" value="D" />
+            <label class="form-check-label"
+              >D. Sunt localizaţi în scoarţa cerebeloasă</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q17" value="E" />
+            <label class="form-check-label"
+              >E. Au numeroase prelungiri celulifuge</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              18. Unul dintre următoarele efecte ale stimulării SNV rezultă în
+              urma eliberării noradrenalinei la capătul fibrei preganglionare:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q18" value="A" checked />
+              <label class="form-check-label">A. Dilatarea pupilei</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q18" value="B" />
+              <label class="form-check-label"
+                >B. Nervii III şi IV au nucleii motori în mezencefal</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q18" value="C" />
+            <label class="form-check-label"
+              >C. Dilatarea arborelui bronşic</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q18" value="D" />
+            <label class="form-check-label"
+              >D.D. Scăderea secreţie gastrice</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q18" value="E" />
+            <label class="form-check-label"
+              >E. Nici un răspuns nu este corect</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              19. În cordoanele măduvei nu se găsesc:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q19" value="A" checked />
+              <label class="form-check-label"
+                >A. Axonii deutoneuronilor pe calea sensibilităţii tactile
+                protopatice</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q19" value="B" />
+              <label class="form-check-label"
+                >B. Axonii deutoneuronilor pe calea sensibilităţii tactile
+                fine</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q19" value="C" />
+            <label class="form-check-label"
+              >C. Axonii deutoneuronilor pe calea sensibilităţii proprioceptive
+              de control al mişcării</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q19" value="D" />
+            <label class="form-check-label"
+              >D. Axonii protoneuronilor pe calea sensibilităţii
+              kinestezice</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q19" value="E" />
+            <label class="form-check-label"
+              >E. E. Axonii deutoneuronilor pe calea sensibilităţii
+              dureroase</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              20. La nivelul lobului temporooccipital nu se găseşte:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q20" value="A" checked />
+              <label class="form-check-label">A. Santul colareral</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q20" value="B" />
+              <label class="form-check-label">B. Santul occipitotemporal</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q20" value="C" />
+            <label class="form-check-label">C. Santul olfactiv</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q20" value="D" />
+            <label class="form-check-label">D. Girul hipocampic</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q20" value="E" />
+            <label class="form-check-label"
+              >E. Girul occipitotemporal medial</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              21. Nervii pelvieni fac sinapsă în ganglionii juxtaviscerali din
+              apropierea:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q21" value="A" checked />
+              <label class="form-check-label">A. Intestinului subtire</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q21" value="B" />
+              <label class="form-check-label">B.Splinei</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q21" value="C" />
+            <label class="form-check-label">C. Vezicii biliare</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q21" value="D" />
+            <label class="form-check-label">D. Vezicii urinare</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q21" value="E" />
+            <label class="form-check-label">E. Rinichiului</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              22. Despre nervul cranian VII sunt adevărate următoarele, cu
+              excepţia:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q22" value="A" checked />
+              <label class="form-check-label">A. Este un nerv mixt</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q22" value="B" />
+              <label class="form-check-label"
+                >B. Fibrele parasimpatice au originea reală într-un singur
+                nucleu din punte</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q22" value="C" />
+            <label class="form-check-label"
+              >C. Fibrele gustative au deutoneuronul în nucleul solitar</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q22" value="D" />
+            <label class="form-check-label"
+              >D. Inervează muşchii mimicii din regiunea zigomatică</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q22" value="E" />
+            <label class="form-check-label"
+              >E. Inervează glanda salivară submandibulară</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              23. Ventriculul III comunică cu ventriculul IV prin:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q23" value="A" checked />
+              <label class="form-check-label">A.Canalul ependimar</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q23" value="B" />
+              <label class="form-check-label"
+                >B. Orificiul interventricular</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="23" value="C" />
+            <label class="form-check-label">C. Venticulul lateral</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q23" value="D" />
+            <label class="form-check-label">D. Apeductul Sylvius</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q23" value="E" />
+            <label class="form-check-label"
+              >E. Nu exista comunicare intre cei doi ventriculi</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              24. Hipotalamusul este centru de integrare a principalelor funcţii
+              ale organismului, cu excepţia:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q24" value="A" checked />
+              <label class="form-check-label"
+                >A. Metabolismului intermediar</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q24" value="B" />
+              <label class="form-check-label">B. Termoreglarii</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q24" value="C" />
+            <label class="form-check-label">C. Digestiei</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q24" value="D" />
+            <label class="form-check-label">D. Analizatorului olfactiv</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q24" value="E" />
+            <label class="form-check-label">E.Secretiei endocrine</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              25. Nu aparţine diencefalului:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q25" value="A" checked />
+              <label class="form-check-label">A.Talamusul</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q25" value="B" />
+              <label class="form-check-label"
+                >B. Corpul geniculat lateral</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q25" value="C" />
+            <label class="form-check-label">C. Hipocampul</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q25" value="D" />
+            <label class="form-check-label">D. Hipotalamusul</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q25" value="E" />
+            <label class="form-check-label">E.Corpul geniculat medial</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              26. Ventriculii I şi ÎI se găsesc la nivelul :
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q26" value="A" checked />
+              <label class="form-check-label">A. Cerebelului</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q26" value="B" />
+              <label class="form-check-label">B. Mezencefalului</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q26" value="C" />
+            <label class="form-check-label">C. Diencefalului</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q26" value="D" />
+            <label class="form-check-label">D. Emisferelor cerebrale</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q26" value="E" />
+            <label class="form-check-label">E.Bulbului si puntii</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              27. Care dintre urmatoarelele reflexe este un reflex vegetativ
+              simpatic cu centrul la nivelul măduvei T5-T9:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q27" value="A" checked />
+              <label class="form-check-label">A. Reflexul de mictiune</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q27" value="B" />
+              <label class="form-check-label"
+                >B. Reflexul pupilodilatator</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q27" value="C" />
+            <label class="form-check-label"
+              >C. Reflexul de stimulare a secreţiei gastrice</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q27" value="D" />
+            <label class="form-check-label"
+              >D. Reflexe de inhibare a motilităţii gastrointestinale</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q27" value="E" />
+            <label class="form-check-label"
+              >E. Reflexe cardioacceleratoare</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              28. Câte tipuri de mediatori chimici se cunosc :
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q28" value="A" checked />
+              <label class="form-check-label">A. Peste 100 de tipuri</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q28" value="B" />
+              <label class="form-check-label">B. Peste 1000 tipuri</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q28" value="C" />
+            <label class="form-check-label">C. Peste 500 de tipuri</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q28" value="D" />
+            <label class="form-check-label">D. Peste 40 de tipuri</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q28" value="E" />
+            <label class="form-check-label">E. Peste 10000 de tipuri</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              29. Unul dintre următorii nervi nu conţine fibre senzoriale:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q29" value="A" checked />
+              <label class="form-check-label">A. II</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q29" value="B" />
+              <label class="form-check-label">B. III</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q29" value="C" />
+            <label class="form-check-label">C. VII</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q29" value="D" />
+            <label class="form-check-label">D. IX</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q29" value="E" />
+            <label class="form-check-label">E. X</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              30. Girul precentral este localizat la nivelul lobului:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q30" value="A" checked />
+              <label class="form-check-label">A. Frontal</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q30" value="B" />
+              <label class="form-check-label">B. Parietal</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q30" value="C" />
+            <label class="form-check-label">C. Occipital</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q30" value="D" />
+            <label class="form-check-label">D. Temporal</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q30" value="E" />
+            <label class="form-check-label">E. Temporooccipital</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              31. Neuronii pseudounipolari se află la nivelul:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q31" value="A" checked />
+              <label class="form-check-label">A. Retinei</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q31" value="B" />
+              <label class="form-check-label">B. Ganglionului spinal</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="C" />
+            <label class="form-check-label">C. Ganglionului spiral</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q31" value="D" />
+            <label class="form-check-label">D. Ganglionului Scarpa</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q31" value="E" />
+            <label class="form-check-label"
+              >E. Coarnelor anterioare medulare</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">32. Corpii tigroizi:</p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q32" value="A" checked />
+              <label class="form-check-label"
+                >A. Sunt prezent in corpul neuronal</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q32" value="B" />
+              <label class="form-check-label">B. Se afla in axoplasma</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q32" value="C" />
+            <label class="form-check-label">C. Au rol mecanic</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q32" value="D" />
+            <label class="form-check-label">D. Au rol in diviziune</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q32" value="E" />
+            <label class="form-check-label">E. Au rol de sustinere</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              33. În axonii amielinici din SNC:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q33" value="A" checked />
+              <label class="form-check-label">A. Lipseşte axoplasma</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q33" value="B" />
+              <label class="form-check-label">B. Lipseşte teaca Schwann</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q33" value="C" />
+            <label class="form-check-label"
+              >C. Potenţialul de acţiune se propagă bidirecţional</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q33" value="D" />
+            <label class="form-check-label">D. Teaca Henle este prezentă</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q33" value="E" />
+            <label class="form-check-label"
+              >E.Oligodendrocitele produc teaca de mielină</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              34. Potenţialul de acţiune neuronal:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q34" value="A" checked />
+              <label class="form-check-label">A. Are o valoare de -80 mV</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q34" value="B" />
+              <label class="form-check-label">B. Durează peste 200 ms</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q34" value="C" />
+            <label class="form-check-label"
+              >C. Are o amplitudine de circa + 40 mV</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q34" value="D" />
+            <label class="form-check-label"
+              >D. Nu se propagă în axonii amielinici</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q34" value="E" />
+            <label class="form-check-label"
+              >E. Se transmite prin dendrite spre efectori</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              35. Colateralele axonale din SNP NU prezintă:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q35" value="A" checked />
+              <label class="form-check-label">A. Axolemă</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q35" value="B" />
+              <label class="form-check-label">B. Axoplasmă</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q35" value="C" />
+            <label class="form-check-label">C. Teacă de mielină</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q35" value="D" />
+            <label class="form-check-label">D. Corpi Nissl</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q35" value="E" />
+            <label class="form-check-label">E. Teacă Schwann</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              6. În SNC, segmentul postsinaptic poate fi o celulă:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q36" value="A" checked />
+              <label class="form-check-label">A. Epiteliala</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q36" value="B" />
+              <label class="form-check-label">B. Musculara</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q36" value="C" />
+            <label class="form-check-label">C. Secretorie</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q36" value="D" />
+            <label class="form-check-label">D. Neuronala</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q36" value="E" />
+            <label class="form-check-label">E. Receptoare</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              37. Pot fi electrice sinapsele:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q37" value="A" checked />
+              <label class="form-check-label">A. Axosomatice</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q37" value="B" />
+              <label class="form-check-label">B. Axodendrice</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q37" value="C" />
+            <label class="form-check-label">C. Axoaxonice</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q37" value="D" />
+            <label class="form-check-label">D. Neuromusculare</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q37" value="E" />
+            <label class="form-check-label">E. Dendrodendritice</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              38. Termenul de reflex a fost introdus de:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q38" value="A" checked />
+              <label class="form-check-label">A. Grigore T Popa</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q38" value="B" />
+              <label class="form-check-label">B. Nicolae C Paulescu</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q38" value="C" />
+            <label class="form-check-label">C. Rene Descartes</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q38" value="D" />
+            <label class="form-check-label">D. Unna Fielding</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q38" value="E" />
+            <label class="form-check-label">E.I P Pavlov</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">39. Ventriculii laterali:</p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q39" value="A" checked />
+              <label class="form-check-label"
+                >A. Se deschid în apeductul lui Sylvius</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q39" value="B" />
+              <label class="form-check-label"
+                >B. Se află în grosimea substanţei albe cerebeloase</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q39" value="C" />
+            <label class="form-check-label">C.Sunt conectaţi prin fornix</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q39" value="D" />
+            <label class="form-check-label">D. Sunt simetrici</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q39" value="E" />
+            <label class="form-check-label"
+              >E. Prin canalul ependimar sunt uniţi cu ventriculul III</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">40. Bulbul olfactiv:</p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q40" value="A" checked />
+              <label class="form-check-label"
+                >A. Se află la nivelul lobului orbital</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q40" value="B" />
+              <label class="form-check-label"
+                >B. Conţine protoneuronul căii olfactive</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q40" value="C" />
+            <label class="form-check-label"
+              >C. Este originea nervilor olfactivi</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q40" value="D" />
+            <label class="form-check-label">D. Are formă de litera H</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q40" value="E" />
+            <label class="form-check-label">E. Prezintă butoni olfactivi</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">41. Cerebelul:</p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q41" value="A" checked />
+              <label class="form-check-label"
+                >A. Se află superior de lobul occipital</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q41" value="B" />
+              <label class="form-check-label"
+                >B. Este situat înapoia bulbului rahidian</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q41" value="C" />
+            <label class="form-check-label"
+              >C. Conţine ventriculii laterali</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q41" value="D" />
+            <label class="form-check-label"
+              >D. Este situat superior de talamus</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q41" value="E" />
+            <label class="form-check-label">E. Include corpul calos</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              42. Fisura mediană anterioară::
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q42" value="A" checked />
+              <label class="form-check-label"
+                >A. Separă fasciculele piramidale directe</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q42" value="B" />
+              <label class="form-check-label"
+                >B. Separă substanţa albă de cea cenuşie</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q42" value="C" />
+            <label class="form-check-label"
+              >C. Este acoperită de dură mater</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q42" value="D" />
+            <label class="form-check-label"
+              >D. Conţine lichid cefalo-rahidian</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q42" value="E" />
+            <label class="form-check-label"
+              >E.Separă fasciculele gracilis drept şi stâng</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">43. Nervii spinali:</p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q43" value="A" checked />
+              <label class="form-check-label"
+                >A. Au un număr egal cu numărul vertebrelor</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q43" value="B" />
+              <label class="form-check-label"
+                >B. Sunt situaţi posterior de arcul vertebral</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q43" value="C" />
+            <label class="form-check-label">C. Au un trunchi mixt</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q43" value="D" />
+            <label class="form-check-label">D. Sunt în număr de 31</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q43" value="E" />
+            <label class="form-check-label"
+              >E. Au câte 5 ramuri formate din fibre somatice</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              44. Coarnele anterioare conţin:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q44" value="A" checked />
+              <label class="form-check-label"
+                >A.Fasciculul spinotalamic anterior</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q44" value="B" />
+              <label class="form-check-label">B. Motoneuroni de tip gama</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q44" value="C" />
+            <label class="form-check-label"
+              >C. Fasciculul piramidal direct</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q44" value="D" />
+            <label class="form-check-label"
+              >D.Axoni ce intră în componenţa rădăcinii posterioare</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q44" value="E" />
+            <label class="form-check-label"
+              >E. Neuroni motori simpatici preganglionari</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              45. Următoarele căi au deutoneuronul în trunchiul cerebral cu
+              excepţia:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q45" value="A" checked />
+              <label class="form-check-label">A. strionigrice</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q45" value="B" />
+              <label class="form-check-label">B. Striorubrice</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q45" value="C" />
+            <label class="form-check-label">C. Spinobulbare</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q45" value="D" />
+            <label class="form-check-label">D. Strioreticulare</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q45" value="E" />
+            <label class="form-check-label">E. Olivospinale</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              46. Mezencefalul este străbătut de următoarele fascicule cu
+              excepţia:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q46" value="A" checked />
+              <label class="form-check-label">A. Piramidal direct</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q46" value="B" />
+              <label class="form-check-label">B. Spinotalmic anterior</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q46" value="C" />
+            <label class="form-check-label">C. Lemnisc medial</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q46" value="D" />
+            <label class="form-check-label">D. Olivospinale</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q46" value="E" />
+            <label class="form-check-label">E. Spinocerebelos incrucisat</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              47. Are originea aparentă pe faţa posterioară a trunchiului
+              cerebral:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q47" value="A" checked />
+              <label class="form-check-label">A. Nervul III</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q47" value="B" />
+              <label class="form-check-label">B. Nervul IV</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q47" value="C" />
+            <label class="form-check-label">C. Nervul V</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q47" value="D" />
+            <label class="form-check-label">D. Nervul VII</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q47" value="E" />
+            <label class="form-check-label">E. Nervul IX</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              48. Inervaţia proprioceptivă a muşchiului drept extern al globului
+              ocular este asigurată de:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q48" value="A" checked />
+              <label class="form-check-label">A.Nervul III</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q48" value="B" />
+              <label class="form-check-label">B. Nervul IV</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q48" value="C" />
+            <label class="form-check-label">C. Nervul V</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q48" value="D" />
+            <label class="form-check-label">D. Nervul VI</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q48" value="E" />
+            <label class="form-check-label">E. Nervul VII</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              49. Nervul VII nu inervează regiunea:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="A" checked />
+              <label class="form-check-label">A. Temporala</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="B" />
+              <label class="form-check-label">B. Cervicala</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q49" value="C" />
+            <label class="form-check-label">C. Occipitala</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="D" />
+            <label class="form-check-label">D. Zigomatica</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q49" value="E" />
+            <label class="form-check-label">E. Mandibulara</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              50. Sensibilitatea protopatică de la nivelul palmei drepte:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q50" value="A" checked />
+              <label class="form-check-label"
+                >A. Este preluată de protoneuronul din ganglionul spinal
+                drept</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q50" value="B" />
+              <label class="form-check-label"
+                >B. Este transmisă unui deutoneuron din cornul posterior
+                stâng</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q50" value="C" />
+            <label class="form-check-label"
+              >C. Este condusă ascendent prin STA de pe partea dreaptă</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q50" value="D" />
+            <label class="form-check-label"
+              >D. Se proiectează în emisfera cerebrală dreaptă</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q50" value="E" />
+            <label class="form-check-label"
+              >E. Este transmisă emisferei cerebeloase stângi</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              51. Cornul posterior medular NU conţine deutoneuronul căii:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q51" value="A" checked />
+              <label class="form-check-label"
+                >A. Spinotalamice anterioare</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q51" value="B" />
+              <label class="form-check-label"
+                >B. Spinocerebeloase directe</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q51" value="C" />
+            <label class="form-check-label">C. Spinotalamice laterale</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q51" value="D" />
+            <label class="form-check-label">D. Spinobulbare</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q51" value="E" />
+            <label class="form-check-label">E. Spinocerebeloase directe</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">52. Reflexul miotatic:</p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q52" value="A" checked />
+              <label class="form-check-label"
+                >A. Este un reflex de apărare</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q52" value="B" />
+              <label class="form-check-label"
+                >B. Are receptorii localizaţi în piele</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q52" value="C" />
+            <label class="form-check-label">C. Are centrii polisinaptici</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q52" value="D" />
+            <label class="form-check-label"
+              >D. Are rol în menţinerea tonusului muscular</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q52" value="E" />
+            <label class="form-check-label"
+              >E. Prezintă proprietatea de iradiere</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              53. Pedunculii cerebeloşi inferiori:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q53" value="A" checked />
+              <label class="form-check-label"
+                >A. Sunt conectaţi cu mezencefalul</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q53" value="B" />
+              <label class="form-check-label">B. Conţin fibre eferente</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q53" value="C" />
+            <label class="form-check-label"
+              >C. Conţin fasciculul spinocerebelos Gowers</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q53" value="D" />
+            <label class="form-check-label"
+              >D. Conţin doar fibre aferente</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q53" value="E" />
+            <label class="form-check-label"
+              >E. Leagă cerebelul de diencefal</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              54. Este adevărat despre sistemul nervos simpatic:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q54" value="A" checked />
+              <label class="form-check-label"
+                >A. Are centrii în măduva spinării S2-S4</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q54" value="B" />
+              <label class="form-check-label"
+                >B. Foloseşte calea unor nervi cranieni</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q54" value="C" />
+            <label class="form-check-label"
+              >C. Toate fibrele preganglionare fac sinapsă în ganglionii
+              paravertebrali</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q54" value="D" />
+            <label class="form-check-label"
+              >D. În sinapsele din ganglionii paravertebrali se eliberează
+              acetilcolină</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q54" value="E" />
+            <label class="form-check-label"
+              >E. În sinapsa dintre fibra preganglionară şi glanda suprarenală
+              se eliberează adrenalină</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              55. Marele nerv splachnic inervează:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q55 " value="A" checked />
+              <label class="form-check-label">A. Ficatul </label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q55" value="B" />
+              <label class="form-check-label">B. Stomacul</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q55" value="C" />
+            <label class="form-check-label">C. Intestinul subtire</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q55" value="D" />
+            <label class="form-check-label"
+              >D. Niciun raspuns nu este corect</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q55" value="E" />
+            <label class="form-check-label"
+              >E. Toate raspunsurile sunt corecte</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              56. Fibrele simpatice preganglionare care asigură inervaţia inimii
+              au originea în segmentele:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q56" value="A" checked />
+              <label class="form-check-label">A. T1-T4</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q56" value="B" />
+              <label class="form-check-label">B. T5-T9</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q56" value="C" />
+            <label class="form-check-label">C. T10-T12</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q56" value="D" />
+            <label class="form-check-label"
+              >D. Niciun raspuns nu este corect</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q56" value="E" />
+            <label class="form-check-label"
+              >E. Toate raspunsurile sunt corecte</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              57. Inervaţia simpatică a glandei parotide este asigurată de
+              fibre:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q57 " value="A" checked />
+              <label class="form-check-label"
+                >A. Cu provenienţa din primul ganglion paravertebral</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q57" value="B" />
+              <label class="form-check-label"
+                >B. Cu originea în nucleul salivator superior</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q57" value="C" />
+            <label class="form-check-label"
+              >C. Cu originea în nucleul salivator inferior</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q57" value="D" />
+            <label class="form-check-label"
+              >D. Nici un răspuns nu este corect</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q57" value="E" />
+            <label class="form-check-label"
+              >E. Toate răspunsurile sunt corecte</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              58. Nu primesc inervaţie parasimpatică:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q58" value="A" checked />
+              <label class="form-check-label">A. Pancreasul exocrin</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q58" value="B" />
+              <label class="form-check-label">B. Rinichii</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q58" value="C" />
+            <label class="form-check-label">C. Glandele salivare</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q58" value="D" />
+            <label class="form-check-label">D. Glandele suprarenale</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q58" value="E" />
+            <label class="form-check-label">E. Glandele lacrimale</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              59. În ganglionii paravertebrali se află neuroni:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q59" value="A" checked />
+              <label class="form-check-label">A. Somatomotori</label>
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q59" value="B" />
+              <label class="form-check-label">B. Visceromotori</label>
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q59" value="C" />
+            <label class="form-check-label">C. Somatosensitivi</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q59" value="D" />
+            <label class="form-check-label">D. Viscerosensitivi</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q59" value="E" />
+            <label class="form-check-label">E. De asociatie</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              60. Stimularea simpatică produce:
+            </p>
+            <!--incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q60 " value="A" checked />
+              <label class="form-check-label"
+                >A. Creşterea secreţiei lacrimale</label
+              >
+            </div>
+            <!-- se termina incepe intrebarea-->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q60" value="B" />
+              <label class="form-check-label"
+                >B. Reducerea forţei de contracţie miocardică</label
+              >
+            </div>
+          </div>
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q60" value="C" />
+            <label class="form-check-label">C. Dilataţie bronşică</label>
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q60" value="D" />
+            <label class="form-check-label"
+              >D. Creşterea secreţiei de mucus bronşic</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <!--incepe intrebarea-->
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q60" value="E" />
+            <label class="form-check-label"
+              >E. E. Relaxarea sfincterului vezical intern</label
+            >
+          </div>
+          <!-- se termina incepe intrebarea-->
+          <div class="text-center">
+            <input type="submit" class="btn btn-light" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="quizz.js"></script>
+  </body>
+</html>
